@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppFlurl"
+             x:Class="AppFlurl.MainPage">
+
+    <StackLayout Padding="10">
+        <!-- Place new controls here -->
+        <Button Text="Buscar Usuários"
+                TextColor="White"
+                BackgroundColor="#3d5afe"
+                Command="{Binding ObterUsuariosCommand}"/>
+        <Button Text="Buscar Post"
+                TextColor="Black"
+                BackgroundColor="#EEEEEE"
+                Command="{Binding ObterPostCommand}"
+                CommandParameter="1"/>
+        <Label Text="{Binding Dados}"
+               TextColor="Gray"
+               HorizontalOptions="StartAndExpand"/>
+    </StackLayout>
+
+</ContentPage>
